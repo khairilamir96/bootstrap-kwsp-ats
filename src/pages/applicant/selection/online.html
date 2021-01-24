@@ -1,0 +1,141 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenavApplicant.html', {
+                        "path": "../../..",
+                        "page": "online",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbarApplicant.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Assessment (Online) </h2>
+                                <p class="mb-0">A generic behavioural assessment and additional assessment(s) (if required) to be completed by candidates before interview
+								</p>
+                            </div>
+                        </div>
+						<div class="table-settings mb-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col col-md-6 col-lg-3 col-xl-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2"><span class="fas fa-search"></span></span>
+                                        <input type="text" class="form-control" id="exampleInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                               <div class="col-4 col-md-2 col-xl-1 pl-md-0 text-right">
+                                    <div class="btn-group">
+                                       <button class="btn btn-white" type="button"><a href="newonline.html"> <span class="fa fa-plus"></span> </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Assessment Tool</th>
+                                        <th>PDF/WORD</th>
+										<th>Online</th>											
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Minimum Qualifying</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                    </tr>
+                                    <!-- Item -->
+									<tr>
+                                        <td><span class="font-weight-normal">Psychometric/Behavioural</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Cognitive</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                        
+                                    </tr>
+                                    <!-- Item -->
+                                   <tr>
+                                        <td><span class="font-weight-normal">Numerical</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                       
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>                       
+                                        <td><span class="font-weight-normal">Verbal Reasoning</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                    </tr>
+                                    <!-- Item -->
+									<tr>                       
+                                        <td><span class="font-weight-normal">Functional/Technical</span></td>                        
+                                        <td><span class="font-weight-normal"><a href="../../assets/kwsp.pdf" target="blank">Questions</a></span></td>
+                                        <td><span class="font-weight-normal"><a href="https://www.practicereasoningtests.com/practice-cognitive-ability-test/" target="blank">Questions</a></span></td>
+                                        
+                                    </tr>
+                                    <!-- Item -->    
+                                </tbody>
+                            </table>
+                        </div>
+						<hr>
+						
+						
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+
+</body>
+
+</html>

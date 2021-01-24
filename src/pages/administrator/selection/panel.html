@@ -1,0 +1,373 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenav.html', {
+                        "path": "../../..",
+                        "page": "panel",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbar.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Panel Appointment & Interview Documentation</h2>
+                                <p class="mb-0">Interview panellist being appointed and candidate’s information will be compiled and prepared for panel before the interview. 
+								</p>
+                            </div>
+                        </div>
+                       <div class="table-settings mb-4">
+                            <div class="row align-items-center justify-content-between">
+                                <div class="col col-md-6 col-lg-3 col-xl-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon2"><span class="fas fa-search"></span></span>
+                                        <input type="text" class="form-control" id="exampleInputIconLeft" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                    </div>
+                                </div>
+                               <div class="col-4 col-md-2 col-xl-1 pl-md-0 text-right">
+                                    <div class="btn-group">
+                                       <button class="btn btn-white" type="button"><a href="newpanel.html"> <span class="fa fa-plus"></span> </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<hr>
+						 <h2 class="h4">Panel Appointment</h2>
+                        <div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Candidate</th>
+                                        <th>Panel</th>						
+										<th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Am</span></td>                        
+                                        <td><span class="font-weight-normal">Zahid</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Amir</span></td>                        
+                                        <td><span class="font-weight-normal">Zahidah</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                   <tr>
+                                        <td><span class="font-weight-normal">Amar</span></td>                        
+                                        <td><span class="font-weight-normal">Zubaidah</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>                       
+                                        <td><span class="font-weight-normal">Asrul</span></td>
+                                        <td><span class="font-weight-normal">Wan</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+									<tr>                       
+                                        <td><span class="font-weight-normal">Aiman</span></td>
+                                        <td><span class="font-weight-normal">Kamarul</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->    
+                                </tbody>
+                            </table>
+                            <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Previous</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="font-weight-bold small">Showing <b>5</b> out of <b>25</b> entries</div>
+                            </div>
+                        </div>
+						<hr>
+						 <h2 class="h4">Interview Documentation</h2>
+						 <div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Candidate</th>
+										<th>Jobs Applied</th>
+                                        <th>Competency</th>
+										<th>Recommended Question</th>
+										<th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Am</span></td>
+										<td><span class="font-weight-normal">Software Developer</span></td>   
+                                        <td><span class="font-weight-normal">Critical Thinking</span></td>
+										<td><span class="font-weight-normal">Critical Thinking</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Amir</span></td>
+										<td><span class="font-weight-normal">System Analyst</span></td>   
+                                        <td><span class="font-weight-normal">Problem Solving</span></td>
+										<td><span class="font-weight-normal">Problem Solving</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                   <tr>
+                                        <td><span class="font-weight-normal">Amar</span></td>                        
+                                        <td><span class="font-weight-normal">System Analyst</span></td> 
+										<td><span class="font-weight-normal">Leadership</span></td>
+										<td><span class="font-weight-normal">Leadership</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->
+                                    <tr>                       
+                                        <td><span class="font-weight-normal">Asrul</span></td>
+                                        <td><span class="font-weight-normal">IT Support</span></td> 
+										<td><span class="font-weight-normal">Teamwork</span></td>
+										<td><span class="font-weight-normal">Teamwork</span></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <span class="icon icon-sm">
+                                                        <span class="fas fa-ellipsis-h icon-dark"></span>
+                                                    </span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href=""><span class="far fa-comment"></span>Send Message</a>
+													<a class="dropdown-item" href=""><span class="fas fa-eye mr-2"></span>View Details</a>
+                                                    <a class="dropdown-item" href="#"><span class="fas fa-edit mr-2"></span>Edit</a>
+                                                    <a class="dropdown-item text-danger" href="#"><span class="fas fa-trash-alt mr-2"></span>Remove</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Item -->									
+                                    <!-- Item -->    
+                                </tbody>
+                            </table>
+                            <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Previous</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="font-weight-bold small">Showing <b>5</b> out of <b>25</b> entries</div>
+                            </div>
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

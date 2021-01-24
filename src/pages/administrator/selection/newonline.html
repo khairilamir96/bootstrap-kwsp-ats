@@ -1,0 +1,147 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenav.html', {
+                        "path": "../../..",
+                        "page": "online",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbar.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Assessment (Online) </h2>
+                                <p class="mb-0">A generic behavioural assessment and additional assessment(s) (if required) to be completed by candidates before interview
+								</p>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-light shadow-sm components-section">
+                                    <div class="card-body">     
+                                        <div class="row mb-4">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-6 ">
+											<form>
+											
+                                                <!-- Form -->
+												<div class="mb-4">
+												<select class="form-select" id="tabs-text" role="tablist" aria-label="Default select example">
+													<option selected>Assessment Tool</option>
+													<option value="1">Minimum Qualifying</option>
+													<option value="1">Psychometric/Behavioural</option>
+													<option value="2">Cognitive</option>
+													<option value="3">Numerical</option>
+													<option value="3">Verbal Reasoning</option>
+													<option value="3">Function/Technical</option>
+												</select>
+												</div>
+                                                <div class="mb-4">
+                                                    <label for="email">MCQ</label>
+                                                    <input type="text" class="form-control" id="job_name">													
+                                                    <label for="a">A<input type="text" class="form-control" id="job_name"></label>
+													<label for="b">B<input type="text" class="form-control" id="job_name"></label>  													
+													<label for="c">C<input type="text" class="form-control" id="job_name"></label>  
+													<label for="d">D<input type="text" class="form-control" id="job_name"></label>  
+											   </div>
+                                                <!-- End of Form -->
+                                                 <div class="mb-4">
+                                                    <label for="email">Normal Question</label>
+                                                    <input type="text" class="form-control" id="job_name">
+                                                </div>
+                                                <!-- Form -->                                               
+                                                <!-- End of Form -->
+												<div class="mb-4">
+                                                    <label for="email">MCQ</label>
+                                                    <input type="text" class="form-control" id="job_name">													
+                                                    <label for="a">A<input type="text" class="form-control" id="job_name"></label>
+													<label for="b">B<input type="text" class="form-control" id="job_name"></label>  													
+													<label for="c">C<input type="text" class="form-control" id="job_name"></label>  
+													<label for="d">D<input type="text" class="form-control" id="job_name"></label>  
+											   </div>
+                                                <!-- End of Form -->
+                                                 <div class="mb-4">
+                                                    <label for="email">Normal Question</label>
+                                                    <input type="text" class="form-control" id="job_name">
+                                                </div>
+												<div class="mb-4">
+                                                    <label for="email">MCQ</label>
+                                                    <input type="text" class="form-control" id="job_name">													
+                                                    <label for="a">A<input type="text" class="form-control" id="job_name"></label>
+													<label for="b">B<input type="text" class="form-control" id="job_name"></label>  													
+													<label for="c">C<input type="text" class="form-control" id="job_name"></label>  
+													<label for="d">D<input type="text" class="form-control" id="job_name"></label>  
+											   </div>
+                                                <!-- End of Form -->
+                                                 <div class="mb-4">
+                                                    <label for="email">Normal Question</label>
+                                                    <input type="text" class="form-control" id="job_name">
+                                                </div>
+												 <div class="form-file mb-3">
+                                                    <input type="file" class="form-file-input" id="customFile">
+                                                    <label class="form-file-label" for="customFile">
+                                                        <span class="form-file-text">Choose file...</span>
+                                                        <span class="form-file-button">Browse</span>
+                                                    </label>
+                                                </div>
+											<button class="btn btn-primary" type="reset"><span style="color:white">Cancel</span></button>	
+											<button class="btn btn-primary" type="button"><a href="online.html"><span style="color:white">Submit</span></a></button>
+											</form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

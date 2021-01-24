@@ -1,0 +1,70 @@
+<nav id="sidebarMenu" class="sidebar d-md-block bg-info text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+      <ul class="nav flex-column">
+		 
+		<li class="nav-item">
+          <span class="nav-link @@if (context.page_group !== 'advertising') { collapsed } d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#submenu-advertising">
+            <span>
+              <span class="sidebar-icon"><span class="far fa-file-alt"></span></span> 
+              Advertising
+            </span>
+            <span class="link-arrow"><span class="fas fa-chevron-right"></span></span> 
+          </span>
+          <div class="multi-level collapse @@if (context.page_group === 'advertising') { show }" role="list" id="submenu-advertising" aria-expanded="false">
+              <ul class="flex-column nav">
+                  <li class="nav-item @@if (context.page === 'jobrequest') { active }"><a class="nav-link" href="@@path/pages/administrator/advertising/jobrequest.html"><span>Job Request</span></a></li>
+                  <li class="nav-item @@if (context.page === 'jobdesc') { active }"><a class="nav-link" href="@@path/pages/administrator/advertising/jobdesc.html"><span>Job Description</span></a></li>
+				  <li class="nav-item @@if (context.page === 'advertise') { active }"><a class="nav-link" href="@@path/pages/administrator/advertising/advertise.html"><span>Advertisement</span></a></li>
+			  </ul>
+          </div>
+        </li>
+		<li class="nav-item">
+           <span class="nav-link @@if (context.page_group !== 'selection') { collapsed } d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#submenu-selection">
+            <span>
+              <span class="sidebar-icon"><span class="fas fa-list"></span></span> 
+              Selection
+            </span>
+            <span class="link-arrow"><span class="fas fa-chevron-right"></span></span> 
+          </span>
+         <div class="multi-level collapse @@if (context.page_group === 'selection') { show }" role="list" id="submenu-selection" aria-expanded="false">
+              <ul class="flex-column nav">
+				  <li class="nav-item @@if (context.page === 'online') { active }"><a class="nav-link" href="@@path/pages/administrator/selection/online.html"><span>Assessment (Online)</span></a></li> 
+				  <li class="nav-item @@if (context.page === 'panel') { active }"><a class="nav-link" href="@@path/pages/administrator/selection/panel.html"><span>Panel Appointment & Interview Documentation</span></a></li> 
+				  <li class="nav-item @@if (context.page === 'interview') { active }"><a class="nav-link" href="@@path/pages/administrator/selection/interview.html"><span>Interview</span></a></li>
+			</ul>
+          </div>
+        </li>
+		<li class="nav-item">
+          <span class="nav-link @@if (context.page_group !== 'offering') { collapsed } d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#submenu-offering">
+            <span>
+              <span class="sidebar-icon"><span class="fas fa-user-check"></span></span> 
+              Offering
+            </span>
+            <span class="link-arrow"><span class="fas fa-chevron-right"></span></span> 
+          </span>
+          <div class="multi-level collapse @@if (context.page_group === 'offering') { show }" role="list" id="submenu-offering" aria-expanded="false">
+              <ul class="flex-column nav">
+                  <li class="nav-item @@if (context.page === 'offerletter') { active }"><a class="nav-link" href="@@path/pages/administrator/offering/offerletter.html"><span>Offer Letter</span></a></li>
+                  <li class="nav-item @@if (context.page === 'acceptance') { active }"><a class="nav-link" href="@@path/pages/administrator/offering/acceptance.html"><span>Acceptance</span></a></li>
+                  <li class="nav-item @@if (context.page === 'reportduty') { active }"><a class="nav-link" href="@@path/pages/administrator/offering/reportduty.html"><span>Report Duty</span></a></li>
+			  </ul>
+          </div>
+        </li>
+		<li class="nav-item @@if (context.page === 'database') { active }">
+          <a href="@@path/pages/administrator/database.html" class="nav-link">
+              <span class="sidebar-icon"><span class="fas fa-database"></span></span>
+              <span>Database</span>
+          </a>
+        </li>
+        <li role="separator" class="dropdown-divider mt-4 mb-3 border-black"></li>      
+      </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+

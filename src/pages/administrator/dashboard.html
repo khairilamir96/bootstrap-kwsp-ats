@@ -1,0 +1,130 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../..",
+        "title": "KWSP -Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+
+                    @@include('./dashboard/_sidenav.html', {
+                        "path": "../..",
+                        "page": "overview",
+                        "page_group": "dashboard"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbar.html', {
+                            "path": "../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="btn-toolbar dropdown">
+                                <button class="btn btn-primary btn-sm mr-2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="fas fa-plus mr-2"></span>New Task
+                                </button>
+                                <div class="dropdown-menu dashboard-dropdown dropdown-menu-left mt-2">
+                                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-tasks"></span>New Task</a>
+                                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-cloud-upload-alt"></span>Upload Files</a>
+                                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-user-shield"></span>Preview Security</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-rocket text-danger"></span>Upgrade to Pro</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-primary">Share</button>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Export</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 mb-4">
+                                <div class="card bg-alt shadow-sm">
+                                    <div class="card-header d-flex flex-row align-items-center flex-0">
+                                        <div class="d-block">
+                                            <div class="h5 font-weight-normal mb-2">Number of Candidates Applied Jobs</div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <div class="ct-chart-sales-value ct-double-octave ct-series-g"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                                <div class="col-12 mb-4">
+                                    <div class="card border-light shadow-sm">
+                                        <div class="card-body d-flex flex-row align-items-center flex-0 border-bottom">
+                                            <div class="d-block">
+                                               <div class="h5 font-weight-normal mb-2">Number of Jobs Applied</div>
+                                            </div>
+                                            <div class="d-block ml-auto">
+                                                <div class="d-flex align-items-center text-right mb-2">
+                                                    <span class="shape-xs rounded-circle bg-quaternary mr-2"></span>
+                                                    <span class="font-weight-normal small">System Analyst</span>
+													 <span> | </span>
+													<span class="shape-xs rounded-circle bg-secondary mr-2"></span>
+                                                    <span class="font-weight-normal small">Software Developer</span>
+													 <span> | </span>
+													<span class="shape-xs rounded-circle bg-success mr-2"></span>
+                                                    <span class="font-weight-normal small">IT Support</span>
+													 <span> | </span>
+													<span class="shape-xs rounded-circle bg-purple mr-2"></span>
+                                                    <span class="font-weight-normal small">Project Manager</span>
+													
+                                                </div>                                               
+                                            </div>
+                                        </div>
+                                        <div class="card-body p-2">
+                                            <div class="ct-chart-ranking ct-golden-section ct-series-a"></div>
+                                        </div>
+										
+                                    </div>
+                                </div>	
+                        </div>
+						
+						
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../.."
+    })
+    
+</body>
+
+</html>

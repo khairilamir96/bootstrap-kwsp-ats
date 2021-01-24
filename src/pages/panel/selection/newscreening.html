@@ -1,0 +1,123 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenavPanel.html', {
+                        "path": "../../..",
+                        "page": "screening",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbarPanel.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Background Screening and Salary Negotiation </h2>
+                                <p class="mb-0">Successful candidate (s) will undergo background screening and negotiation of salary process.
+								</p>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-light shadow-sm components-section">
+                                    <div class="card-body">     
+                                        <div class="row mb-4">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-6 ">
+												<form>
+                                                <div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Candidate</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">Am</option>
+                                                        <option value="2">Amir</option>
+                                                        <option value="3">Amar</option>
+                                                    </select>
+                                                </div>
+												<div class="mb-4">
+                                                    <label for="email">Salary Negotiation</label>
+                                                    <input type="text" class="form-control" id="job_name">
+                                                </div>												
+												<div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Experience</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">0</option>
+                                                        <option value="2">1</option>
+                                                        <option value="3">2</option>
+                                                    </select>
+                                                </div>
+												<div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Education Level</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">Diploma</option>
+                                                        <option value="2">Degree</option>
+                                                    </select>
+                                                </div>
+												<div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Specialization</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">It-Software</option>
+                                                    </select>
+                                                </div>													
+												<button class="btn btn-primary" type="reset"><span style="color:white">Cancel</span></button>	
+												<button class="btn btn-primary" type="button"><a href="screening.html"><span style="color:white">Submit</span></a></button>
+												</form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

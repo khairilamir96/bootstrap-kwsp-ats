@@ -1,0 +1,129 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenavPanel.html', {
+                        "path": "../../..",
+                        "page": "confirm",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbarPanel.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Confirmation of Successful Candidate</h2>
+                                <p class="mb-0">Selection of successful, keep in view and unsuccessful candidates by interview panel 
+								</p>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-light shadow-sm components-section">
+                                    <div class="card-body">     
+                                        <div class="row mb-4">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-6 ">
+												<form>
+                                                <div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Candidate</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">Am</option>
+                                                        <option value="2">Amir</option>
+                                                        <option value="3">Amar</option>
+                                                    </select>
+                                                </div>
+												<div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Panel</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">Zahid</option>
+                                                        <option value="2">Zahidah</option>
+                                                        <option value="3">Zubaidah</option>
+                                                    </select>
+                                                </div>
+												<div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                                                <!-- Radio -->
+                                                <fieldset>
+                                                    <legend class="h6">Selection Status</legend>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                        <label class="form-check-label" for="exampleRadios1">
+                                                         Successful
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                        <label class="form-check-label" for="exampleRadios2">
+                                                          Unsuccessful
+                                                        </label>
+                                                      </div>
+													   <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                        <label class="form-check-label" for="exampleRadios2">
+                                                          Keep In View
+                                                        </label>
+                                                      </div>
+                                                    <!-- End of Radio -->
+                                                </fieldset>
+                                            </div>													
+												<button class="btn btn-primary" type="reset"><span style="color:white">Cancel</span></button>	
+												<button class="btn btn-primary" type="button"><a href="confirm.html"><span style="color:white">Submit</span></a></button>
+												</form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

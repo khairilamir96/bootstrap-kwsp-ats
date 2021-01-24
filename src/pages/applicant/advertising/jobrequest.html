@@ -1,0 +1,229 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenavApplicant.html', {
+                         "path": "../../..",
+                        "page": "jobrequest",
+                        "page_group": "advertising"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbarApplicant.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Job Request </h2>
+                                <p class="mb-0">A request to fill in the vacant position by management or business due to staff attrition or new post created.
+								</p>
+                            </div>
+                        </div>
+                       <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card border-light shadow-sm components-section">
+                                    <div class="card-body">     
+                                        <div class="row mb-4">
+                                            <div class="col-lg-8 offset-lg-2 col-sm-6 ">
+											<form>
+                                               <div class="mb-4">
+                                                    <label class="my-1 mr-2" for="country">Job Name</label>
+                                                    <select class="form-select" id="country" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1" data-toggle="modal" data-target="#modal-SA">System Analyst</option>
+                                                        <option value="2" data-toggle="modal" data-target="#modal-SD">Software Developer</option>
+                                                        <option value="3" data-toggle="modal" data-target="#modal-IT">IT Support</option>
+                                                    </select>
+                                                </div>                                              											
+											<button class="btn btn-primary" type="button">Submit</button>
+											</form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+											<div class="col-md-4">
+                                                <!-- Modal Content -->
+                                                <div class="modal fade" id="modal-SA" tabindex="-1" role="dialog" aria-labelledby="modal-SA" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body p-0">
+                                                                <div class="card border-light p-4">
+                                                                    <div class="card-header text-center pb-0">
+                                                                        <h2 class="mb-0 h5">Job Details</h2>                               
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <form action="#">
+                                                                            <!-- Form -->
+                                                                            <div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Job Name</label>
+																				<p>System Analyst</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Description</label>
+																				<p>A systems analyst, also known as business technology analyst, is an information technology professional who specializes in analyzing, designing and implementing information systems</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Responsibilities</label>
+																				<p>Design , draw, sketch wireframe</p>
+																			</div> 
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Competencies</label>
+																				<p>Teamwork</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Minimum Level</label>
+																				<p>Diploma, Degree</p>
+																			</div>
+                                                                     </div>
+                                                                            <!-- End of Form -->                                                                          
+                                                                        </form>
+
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <!-- End of Modal Content -->
+                                            </div>
+											
+											<div class="col-md-4">
+                                                <!-- Modal Content -->
+                                                <div class="modal fade" id="modal-SD" tabindex="-1" role="dialog" aria-labelledby="modal-SD" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body p-0">
+                                                                <div class="card border-light p-4">
+                                                                    <div class="card-header text-center pb-0">
+                                                                        <h2 class="mb-0 h5">Job Details</h2>                               
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <form action="#">
+                                                                            <!-- Form -->
+                                                                            <div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Job Name</label>
+																				<p>Software Developer</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Description</label>
+																				<p>Applies the principles of software engineering to the design, development, maintenance, testing, and evaluation of computer software</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Responsibilities</label>
+																				<p>Code, Integrate, Maintain</p>
+																			</div> 
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Competencies</label>
+																				<p>Problem Solving</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Minimum Level</label>
+																				<p>Degree</p>
+																			</div>
+                                                                     </div>
+                                                                            <!-- End of Form -->                                                                          
+                                                                        </form>
+
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <!-- End of Modal Content -->
+                                            </div>
+											
+											<div class="col-md-4">
+                                                <!-- Modal Content -->
+                                                <div class="modal fade" id="modal-IT" tabindex="-1" role="dialog" aria-labelledby="modal-IT" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-body p-0">
+                                                                <div class="card border-light p-4">
+                                                                    <div class="card-header text-center pb-0">
+                                                                        <h2 class="mb-0 h5">Job Details</h2>                               
+                                                                    </div>
+                                                                    <div class="card-body">
+                                                                        <form action="#">
+                                                                            <!-- Form -->
+                                                                            <div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Job Name</label>
+																				<p>IT Support</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Description</label>
+																				<p>
+																				Monitor and maintain the computer systems and networks of an organisation. You will be installing and configuring computer systems, diagnosing hardware and software faults and solving technical and applications problems, either over the phone or in person.
+																				</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Responsibilities</label>
+																				<p>Hardware technical, WAN, LAN</p>
+																			</div> 
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Competencies</label>
+																				<p>Leadership</p>
+																			</div>
+																			<div class="form-group mb-0">
+                                                                                <label for="exampleInputEmailCard3">Minimum Level</label>
+																				<p>Diploma, Degree</p>
+																			</div>
+                                                                     </div>
+                                                                            <!-- End of Form -->                                                                          
+                                                                        </form>
+
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <!-- End of Modal Content -->
+                                            </div>
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

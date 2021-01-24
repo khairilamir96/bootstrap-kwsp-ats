@@ -1,0 +1,30 @@
+<nav id="sidebarMenu" class="sidebar d-md-block bg-info text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+      <ul class="nav flex-column">
+				
+		<li class="nav-item">
+           <span class="nav-link @@if (context.page_group !== 'selection') { collapsed } d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#submenu-selection">
+            <span>
+              <span class="sidebar-icon"><span class="fas fa-list"></span></span> 
+              Selection
+            </span>
+            <span class="link-arrow"><span class="fas fa-chevron-right"></span></span> 
+          </span>
+         <div class="multi-level collapse @@if (context.page_group === 'selection') { show }" role="list" id="submenu-selection" aria-expanded="false">
+              <ul class="flex-column nav">
+				  <li class="nav-item @@if (context.page === 'department') { active }"><a class="nav-link" href="@@path/pages/hr/selection/department.html"><span>Shortlist Application By Department</span></a></li> 
+			</ul>
+          </div>
+        </li>
+        <li role="separator" class="dropdown-divider mt-4 mb-3 border-black"></li>      
+      </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+

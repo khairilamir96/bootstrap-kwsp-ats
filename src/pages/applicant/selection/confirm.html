@@ -1,0 +1,93 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": "../../..",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+
+        @@include('./dashboard/_nav.html', {
+            "path": "../../.."
+        })
+
+        <div class="container-fluid bg-soft">
+            <div class="row">
+                <div class="col-12">
+                    @@include('./dashboard/_sidenavApplicant.html', {
+                        "path": "../../..",
+                        "page": "confirm",
+                        "page_group": "selection"
+                    })
+                
+                    <main class="content">
+
+                        @@include('./dashboard/_topbarApplicant.html', {
+                            "path": "../../.."
+                        })
+
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+                            <div class="d-block mb-4 mb-md-0">
+                                <h2 class="h4">Confirmation of Successful Candidate</h2>
+                                <p class="mb-0">Selection of successful, keep in view and unsuccessful candidates by interview panel
+								</p>
+                            </div>
+                        </div>                      
+                        <div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Candidate</th>
+                                        <th>Panel</th>	
+										<th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Item -->
+                                    <tr>
+                                        <td><span class="font-weight-normal">Am</span></td>                        
+                                        <td><span class="font-weight-normal">Zahid</span></td>
+										<td><span class="font-weight-bold text-success">Successful</span></td>
+                                       
+                                    </tr>
+                                    <!-- Item -->
+                                     
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                        @@include('./dashboard/_footer.html', {
+                            "path": "../../..",
+                            "classes": "text-dark"
+                        })
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    @@include('./_scripts.html', {
+        "path": "../../.."
+    })
+    
+</body>
+
+</html>

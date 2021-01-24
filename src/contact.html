@@ -1,0 +1,77 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    @@include('./_head.html', {
+        "path": ".",
+        "title": "KWSP - Job Applicant"
+    })
+</head>
+
+<body>
+    @@include('./_navigation.html', {
+        "path": ".",
+        "classes": "navbar-dark"
+    })
+    <main>
+
+        <!-- Hero -->
+        <section class="section section-lg bg-primary text-black">
+            <div class="container">
+				<div class="row justify-content-center mb-5 mb-lg-6">
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <!-- Contact Card -->
+                        <div class="card border-0 p-2 p-md-3">
+                            <div class="card-body px-0">
+								<form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6" for="exampleInputName1">Full name</label>
+                                        <div class="input-group">                                          
+                                            <input class="form-control" placeholder="Name" type="text" id="exampleInputName1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6" for="exampleInputEmail1">Email address</label>
+                                        <div class="input-group">     
+                                            <input class="form-control" placeholder="Email" type="email" id="exampleInputEmail1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="h6" for="exampleFormControlTextarea1">Your message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="How can we help?" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-block rounded btn-secondary mt-5">Send message</button>
+                                </form>
+							</div>
+						</div>
+					</div>	
+            </div>
+        </section>
+	</main>
+    @@include('./_footer.html', {
+        "path": ".",
+        "classes": "bg-primary text-white"
+    })
+
+    @@include('./_scripts.html', {
+        "path": "."
+    })
+</body>
+
+</html>
